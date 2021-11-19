@@ -1,0 +1,1500 @@
+@font-face {
+  font-family: "Palmia";
+  src: url(fonts/Palmia-Jd8a.ttf);
+}
+@font-face {
+  font-family: "AvantstileRegular";
+  src: url(fonts/AvantstileRegular-ELlg.ttf);
+}
+@font-face {
+  font-family: "RavenSans";
+  src: url(fonts/RavenSansNbp-6L31.ttf);
+}
+@font-face {
+  font-family: "RavenSerif";
+  src: url(fonts/RavenSerifNbp-yGzV.ttf);
+}
+@font-face {
+  font-family: "PokemonPixel";
+  src: url(fonts/pokemon/PokemonPixels1-jYmj.ttf);
+}
+@font-face {
+  font-family: "Pokemon";
+  src: url(fonts/pokemon/PokemonSolidNormal-xyWR.ttf);
+}
+@font-face {
+  font-family: "OnePiece";
+  src: url(fonts/OnePiece/OnePiece-zAqL.ttf);
+}
+@font-face {
+  font-family: "bleach";
+  src: url(fonts/Bleach/FontBleach.ttf);
+}
+@font-face {
+  font-family: "naruto";
+  src: url(fonts/Naruto/njnaruto.ttf);
+}
+@font-face {
+  font-family: "Staubach";
+  src: url(fonts/FMAB/Staubach.ttf);
+}
+@font-face {
+  font-family: "DN";
+  src: url(fonts/DeathNote/Death_Note_Font_by_Karlibell22.ttf);
+}
+@font-face {
+  font-family: "aot";
+  src: url(fonts/aot/AttackOnCourier-5nJz.ttf);
+}
+#banner {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px lavenderblush;
+}
+
+#navbar nav ul {
+  display: grid;
+  font-weight: bold;
+  float: left;
+  font-family: "Palmia";
+  font-size: 30px;
+}
+#navbar nav {
+  display: grid;
+}
+#navbar nav ul li {
+ list-style-type: none;
+}
+
+/* ==================NAV===================*/
+/* ================BANNER==================*/
+/* ========================================*/
+
+#title1 {
+  font-family: "RavenSans";
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+#par1 {
+  font-family: "AvantstileRegular";
+  display: flexbox;
+  width: 70%;
+  text-align: center;
+  word-spacing: 6px;
+  line-height: 50px;
+  font-size: 30px;
+}
+#par1 > span {
+  font-style: italic;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid skyblue;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+/* ================Header===================*/
+/* ================parag1==================*/
+/* ========================================*/
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  max-width: 100%;
+  padding-top: 30px;
+  border-bottom: 3px solid plum;
+  padding-bottom: 50px;
+}
+.grid-container .img1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.grid-container .img2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.grid-container .img3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.grid-container .img1 img {
+  width: 500px;
+}
+.grid-container .img2 img {
+  width: 450px;
+  height: 590px;
+}
+.grid-container .img3 img {
+  width: 500px;
+}
+
+/* ================GRID===================*/
+/* ===============3imgs==================*/
+/* =====================================*/
+
+#pokeText {
+  font-family: "PokemonPixel";
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: -30px;
+  color: skyblue;
+}
+
+#pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#pokemon #funFact {
+  display: flexbox;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Pokemon";
+  margin-bottom: -20px;
+}
+
+#pokemon #fact {
+  display: flexbox;
+  width: 60%;
+  align-self: center;
+  text-align: center;
+  font-family: "AvantstileRegular";
+  /* font-family: "AvantstileRegular"; */
+  font-size: 30px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+#pokemon #fact2 {
+  display: flexbox;
+  width: 60%;
+  align-self: center;
+  text-align: center;
+  font-family: "Staubach";
+  /* font-family: "AvantstileRegular"; */
+  font-size: 24px;
+  word-spacing: 10px;
+  letter-spacing: 2px;
+}
+#pokemon #fact > span {
+  color: cornflowerblue;
+}
+#pokemon #fact2 > span {
+  color: cornflowerblue;
+}
+
+#banner2 {
+  background-color: skyblue;
+}
+#navbar2 ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar2 nav ul li {
+  display: inline;
+  padding-right: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+#navbar2 nav ul {
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: "Palmia";
+  font-size: 20px;
+}
+#navbar2 nav ul li a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar2 nav ul li a:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
+#navbar2 nav ul li a:active {
+  text-decoration: underline;
+  text-decoration-color: plum;
+  color: plum;
+}
+/*=================PAGE 1 DONE================*/
+
+/*==========================================*/
+
+/*==========================================*/
+
+/*==========================================*/
+
+/*====================INDEX2================*/
+
+/*=====================PAGE2================*/
+
+#banner3 {
+  width: 100%;
+  background-image: url(images/aot-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px lavenderblush;
+}
+
+#title2 {
+  font-family: "RavenSans";
+  color: white;
+  padding-top: 150px;
+  padding-left: 30px;
+}
+
+/*=================================*/
+
+/*==========================================*/
+
+/*==========================================*/
+
+/*==========================================*/
+
+/*===========HIGHEST RATED ANIME===========*/
+
+/*============FMAB DN AOT==================*/
+
+#Info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#par2 {
+  display: flexbox;
+  font-family: "Staubach";
+  width: 70%;
+  text-align: center;
+  font-size: 30px;
+  align-self: center;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+
+#title3 {
+  font-family: "RavenSans";
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid burlywood;
+}
+#Info .FMAB:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/Edward.gif);
+}
+#outer1 {
+  display: flex;
+  align-self: center;
+  text-align: center;
+}
+#outer1 img {
+  width: 50%;
+  height: 30%;
+}
+#inner1 {
+  display: flexbox;
+  float: left;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+
+#fmab {
+  font-family: "Staubach";
+  transform: translateY(-30px);
+}
+#fmab2 {
+  font-family: "Staubach";
+  font-size: 12px;
+  transform: translateY(-30px);
+  letter-spacing: 2px;
+}
+#fmab2 > span {
+  color: burlywood;
+}
+
+#inner1 .stars {
+  height: 15px;
+  width: 15px;
+}
+
+#Info .DeathNote:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/L\ vs\ Light.gif);
+}
+#DN1 {
+  font-family: "DN";
+  transform: translateY(-25px);
+}
+#DN2 {
+  font-family: "Staubach";
+  font-size: 12px;
+  transform: translateY(-25px);
+  letter-spacing: 2px;
+}
+
+#Info .aot:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/AOT.gif);
+}
+#AOT {
+  font-family: "aot";
+  transform: translateY(-25px);
+}
+
+/*=================BIG THREE================*/
+
+/*==========================================*/
+
+/*==========================================*/
+
+#title4 {
+  font-family: "RavenSans";
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid skyblue;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  gap: 40px;
+  max-width: 100%;
+  border-bottom: 3px solid cornflowerblue;
+}
+
+.grid-container2 .txt1 {
+  font-family: "OnePiece";
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 30px;
+}
+.grid-container2 .txt2 {
+  font-family: "naruto";
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 30px;
+}
+.grid-container2 .txt3 {
+  font-family: "bleach";
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: center;
+  font-size: 30px;
+}
+.grid-container2 .op {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.grid-container2 .naruto {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.grid-container2 .bleach {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.grid-container2 .overview1 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  width: 400px;
+  text-align: center;
+}
+.grid-container2 .overview2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  width: 400px;
+  text-align: center;
+}
+.grid-container2 .overview3 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  width: 400px;
+  text-align: center;
+}
+
+.grid-container2 .op img {
+  width: 500px;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container2 .naruto img {
+  width: 500px;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container2 .bleach img {
+  width: 500px;
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#B3 {
+  font-family: "Staubach";
+  font-size: 11px;
+  transform: translateY(-30px);
+  letter-spacing: 2px;
+}
+#B3 > span {
+  color: cornflowerblue;
+}
+
+.grid-container2 .op img:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/one-piece.gif);
+}
+.grid-container2 .naruto img:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/naruto-ninja.jpg);
+}
+.grid-container2 .bleach img:hover {
+  animation-name: toGIF;
+  animation-duration: 1s;
+  opacity: 1;
+  content: url(gifs/bleach-ichigo.gif);
+}
+
+#pokeText2 {
+  font-family: "PokemonPixel";
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: -30px;
+  color: darkslateblue;
+}
+
+#banner4 {
+  background-color: burlywood;
+}
+#navbar3 ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar3 nav ul li {
+  display: inline;
+  padding-right: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+#navbar3 nav ul {
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: "Palmia";
+  font-size: 20px;
+}
+#navbar3 nav ul li a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar3 nav ul li a:hover {
+  text-decoration: underline;
+  color: darkslateblue;
+}
+#navbar3 nav ul li a:active {
+  text-decoration: underline;
+  text-decoration-color: navy;
+  color: navy;
+}
+
+#banner5 {
+  width: 100%;
+  background-image: url(images/Gojo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px lavenderblush;
+}
+
+#banner6 {
+  background-color: blueviolet;
+}
+#navbar5 ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar5 nav ul li {
+  display: inline;
+  padding-right: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+#navbar5 nav ul {
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: "Palmia";
+  font-size: 20px;
+}
+#navbar5 nav ul li a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar5 nav ul li a:hover {
+  text-decoration: underline;
+  color: navy;
+}
+#navbar5 nav ul li a:active {
+  text-decoration: underline;
+  text-decoration-color: navy;
+  color: navy;
+}
+
+#title5 {
+  font-family: "RavenSans";
+  color: white;
+  padding-top: 150px;
+  padding-left: 30px;
+}
+
+#title6 {
+  font-family: "RavenSans";
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid navy;
+}
+#title7 {
+  font-family: "RavenSans";
+  color: white;
+  padding-left: 30px;
+}
+#intro2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+#intro2 #par1 {
+  align-self: center;
+  line-height: 60px;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+#box1 {
+  display: flexbox;
+  text-align: center;
+  align-self: center;
+}
+#box2 {
+  display: flexbox;
+  align-self: center;
+}
+
+#box3 {
+  display: flexbox;
+  text-align: center;
+  align-self: center;
+}
+#box4 {
+  display: flexbox;
+  align-self: center;
+}
+#box4 img {
+  width: 400px;
+}
+
+#p2 {
+  display: flexbox;
+  font-family: "AvantstileRegular";
+  width: 400px;
+  font-size: 20px;
+  line-height: 40px;
+  word-spacing: 3px;
+  letter-spacing: 3px;
+}
+#p2 span {
+  color: purple;
+  font-weight: bold;
+}
+#par1 span {
+  color: purple;
+  font-weight: bold;
+}
+
+#banner7 {
+  width: 100%;
+  background-image: url(images/Champloo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px lavenderblush;
+  background-position-y: center;
+}
+#banner7 > div {
+  color: white;
+}
+
+#banner8 {
+  background-color: rgb(218, 51, 0); /*rgb(254, 225, 155);*/
+  width: 100%;
+}
+
+#navbar6 {
+}
+#navbar6 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar6 nav ul li {
+  display: inline;
+  padding-right: 40px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+#navbar6 nav ul {
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-family: "Palmia";
+  font-size: 20px;
+}
+#navbar6 nav ul li a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#navbar6 nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(254, 225, 155);
+}
+#navbar6 nav ul li a:active {
+  text-decoration: underline;
+  text-decoration-color: navy;
+  color: navy;
+}
+#title8 {
+  font-family: "RavenSans";
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 3px solid rgb(218, 51, 0);
+}
+
+#gif-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 200px;
+}
+#gif-container > div img {
+  width: 700px;
+  height: 400px;
+}
+#animation {
+  text-align: center;
+  font-family: "AvantstileRegular";
+  font-size: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#gif1 {
+  display: flexbox;
+  align-self: center;
+}
+
+
+
+
+
+
+
+/* 
+
+=========================================================================
+
+=========================================================================
+
+=========================================================================
+
+=========================================================================
+
+=========================================================================
+
+========================================================================= */
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  #banner3 #title2 {
+    animation-name: PhoneShrinkTitle2;
+    animation-duration: 2s;
+    padding-top: 220px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #gif-container #gif1 img {
+    width: 300px;
+    height: 200px;
+  }
+  #box4 img {
+    width: 300px;
+  }
+  #box2 img {
+    width: 300px;
+  }
+  h1 #title6 {
+    font-size: 10px;
+  }
+  #banner5 #title5 {
+    animation-name: PhoneShrinkTitle3;
+    animation-duration: 2s;
+    padding-top: 180px;
+    font-size: 30px;
+  }
+
+  #banner3 #title2 {
+    animation-name: PhoneShrinkTitle2;
+    animation-duration: 2s;
+    padding-top: 220px;
+    font-size: 30px;
+  }
+  #navbar6 ul li a {
+    font-size: 20px;
+  }
+  #navbar5 ul li a {
+    font-size: 20px;
+  }
+  #navbar4 ul li a {
+    font-size: 20px;
+  }
+  #navbar3 ul li a {
+    font-size: 20px;
+  }
+  #navbar2 ul li a {
+    font-size: 20px;
+  }
+  #title1 {
+    font-size: 24px;
+  }
+  #par1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  #p2 {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .grid-container .img1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .grid-container .img2 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .grid-container .img3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .grid-container .img1 img {
+    width: 500px;
+  }
+  .grid-container .img2 img {
+    width: 500px;
+    height: 650px;
+  }
+  .grid-container .img3 img {
+    width: 500px;
+  }
+  #B3 {
+    font-size: 20px;
+  }
+  .grid-container2 {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  }
+
+  .grid-container2 .txt1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .grid-container2 .txt2 {
+    grid-column: 2/3;
+
+    grid-row: 4/5;
+  }
+  .grid-container2 .txt3 {
+    grid-column: 2/3;
+
+    grid-row: 7/8;
+  }
+  .grid-container2 .op {
+    grid-column: 2/3;
+
+    grid-row: 2/3;
+  }
+  .grid-container2 .naruto {
+    grid-column: 2/3;
+
+    grid-row: 5/6;
+  }
+
+  .grid-container2 .bleach {
+    grid-column: 2/3;
+
+    grid-row: 8/9;
+  }
+
+  .grid-container2 .overview1 {
+    grid-column: 2/3;
+
+    grid-row: 3/4;
+    width: 500px;
+  }
+  .grid-container2 .overview2 {
+    grid-column: 2/3;
+
+    grid-row: 6/7;
+    width: 500px;
+  }
+  .grid-container2 .overview3 {
+    grid-column: 2/3;
+
+    grid-row: 9/10;
+    width: 500px;
+  }
+
+  .grid-container2 .op img {
+    width: 500px;
+    height: 350px;
+  }
+
+  .grid-container2 .naruto img {
+    width: 500px;
+    height: 350px;
+  }
+
+  .grid-container2 .bleach img {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #title8 {
+    font-size: 23px;
+  }
+  #animation {
+    font-size: 28px;
+  }
+  #gif-container > div img {
+    width: 500px;
+    height: 300px;
+  }
+  #par2 {
+    font-size: 20px;
+  }
+  #pokemon #fact {
+    font-size: 15px;
+  }
+  #pokemon #fact2 {
+    font-size: 14px;
+  }
+  #title3 {
+    font-size: 26px;
+  }
+  #title4 {
+    font-size: 26px;
+  }
+  #title6 {
+    font-size: 26px;
+  }
+  #banner {
+    animation-name: slide1;
+    animation-duration: 2s;
+    background-image: url(images/banner3_enhanced.png);
+  }
+  #title1 {
+    border-bottom: 3px solid plum;
+    animation-duration: 2s;
+    animation-name: changeBorder;
+  }
+  #title2 {
+    animation-name: ShrinkTitle;
+    animation-duration: 2s;
+    font-size: 50px;
+    padding-top: 190px;
+  }
+  #title5 {
+    animation-name: ShrinkTitle2;
+    animation-duration: 2s;
+    font-size: 30px;
+    padding-top: 190px;
+  }
+  #title7 {
+    animation-name: ShrinkTitle3;
+    animation-duration: 2s;
+    font-size: 30px;
+    padding-top: 310px;
+  }
+  /* .grid-container .img1 img{
+   animation-name: img1;
+   animation-duration: 1s;
+   content:url("images/Gojo.jpg")
+  }
+  
+  .grid-container .img3 img{
+    animation-name: img3;
+    animation-duration: 1s;
+    content: url("images/Quindecim.jpg")
+  }
+  @keyframes img1 {
+    0% {opacity: 0;}
+    50%  {opacity: 1; content:url("images/Gojo.jpg");}
+  }
+  @keyframes img3 {
+    0% {opacity: 0;}
+    50%  {opacity: 1; content:url("images/Quindecim.jpg");}
+  } */
+  #navbar nav ul li a {
+    text-decoration: none;
+    animation-name: changeColor1;
+    animation-duration: 2s;
+    color: aliceblue;
+    padding-right: 20px;
+  }
+  #navbar nav ul li a:hover {
+    color: blanchedalmond;
+    text-decoration: underline;
+  }
+
+  #navbar nav ul li a:active {
+    color: pink;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #inner1 .stars {
+    height: 10px;
+    width: 10px;
+  }
+  #pokemon #fact2 {
+    font-size: 11px;
+  }
+  #par2 {
+    font-size: 16px;
+  }
+  #AOT {
+    font-size: 20px;
+  }
+  #DN1 {
+    font-size: 20px;
+  }
+  #fmab {
+    font-size: 20px;
+  }
+  #fmab2 {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #inner1 .stars {
+    height: 8px;
+    width: 8px;
+  }
+  #par2 {
+    font-size: 12px;
+  }
+  #B3 {
+    font-size: 10px;
+  }
+  .grid-container2 .overview1 {
+    width: 300px;
+  }
+  .grid-container2 .overview2 {
+    width: 300px;
+  }
+  .grid-container2 .overview3 {
+    width: 300px;
+  }
+  .grid-container2 .op img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .grid-container2 .naruto img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .grid-container2 .bleach img {
+    width: 300px;
+    height: 240px;
+  }
+  #AOT {
+    font-size: 15px;
+  }
+  #DN1 {
+    font-size: 15px;
+  }
+  #fmab {
+    font-size: 15px;
+  }
+  #fmab2 {
+    font-size: 7px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #banner {
+    animation-name: slide;
+    animation-duration: 2s;
+    background-image: url(images/banner_sakura.png);
+  }
+  #box4 img {
+    width: 500px;
+  }
+  #p2 {
+    font-size: 25px;
+    width: 500px;
+  }
+
+  #title1 {
+    border-bottom: 3px solid pink;
+    animation-duration: 2s;
+    animation-name: changeBorder2;
+  }
+  #title2 {
+    animation-name: EnlargeTitle;
+    animation-duration: 2s;
+    font-size: 70px;
+    padding-top: 150px;
+  }
+  #title5 {
+    animation-name: EnlargeTitle2;
+    animation-duration: 2s;
+    font-size: 60px;
+    padding-top: 150px;
+  }
+  #title7 {
+    animation-name: EnlargeTitle3;
+    animation-duration: 2s;
+    font-size: 60px;
+    padding-top: 270px;
+  }
+  #navbar nav ul li a {
+    text-decoration: none;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    font-size: 36px;
+    color: purple;
+  }
+  #navbar nav ul li a:hover {
+    color: pink;
+    text-decoration: underline;
+  }
+
+  #navbar nav ul li a:active {
+    color: palevioletred;
+  }
+  #inner1 .stars {
+    height: 20px;
+    width: 20px;
+  }
+  #AOT {
+    font-size: 30px;
+  }
+  #fmab {
+    font-size: 30px;
+  }
+  #DN1 {
+    font-size: 30px;
+  }
+  #fmab2 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #box4 img {
+    width: 600px;
+  }
+  #p2 {
+    font-size: 30px;
+    width: 600px;
+  }
+  #B3 {
+    font-size: 10px;
+  }
+  .grid-container2 .overview1 {
+    width: 300px;
+  }
+  .grid-container2 .overview2 {
+    width: 300px;
+  }
+  .grid-container2 .overview3 {
+    width: 300px;
+  }
+  .grid-container2 .op img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .grid-container2 .naruto img {
+    width: 300px;
+    height: 240px;
+  }
+
+  .grid-container2 .bleach img {
+    width: 300px;
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #inner1 .stars {
+    height: 25px;
+    width: 25px;
+  }
+  #B3 {
+    font-size: 14px;
+  }
+  .grid-container2 .overview1 {
+    width: 375px;
+  }
+  .grid-container2 .overview2 {
+    width: 375px;
+  }
+  .grid-container2 .overview3 {
+    width: 375px;
+  }
+  .grid-container2 .op img {
+    width: 375px;
+    height: 280px;
+  }
+
+  .grid-container2 .naruto img {
+    width: 375px;
+    height: 280px;
+  }
+
+  .grid-container2 .bleach img {
+    width: 375px;
+    height: 280px;
+  }
+  #AOT {
+    font-size: 38px;
+  }
+  #DN1 {
+    font-size: 38px;
+  }
+  #fmab {
+    font-size: 38px;
+  }
+  #fmab2 {
+    font-size: 19px;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #inner1 .stars {
+    height: 30px;
+    width: 30px;
+  }
+  #navbar nav ul {
+    animation-name: slideUL1;
+    animation-duration: 2s;
+    padding-left: 100px;
+  }
+  #B3 {
+    font-size: 20px;
+  }
+  .grid-container2 .overview1 {
+    width: 500px;
+  }
+  .grid-container2 .overview2 {
+    width: 500px;
+  }
+  .grid-container2 .overview3 {
+    width: 500px;
+  }
+  .grid-container2 .op img {
+    width: 500px;
+    height: 400px;
+  }
+
+  .grid-container2 .naruto img {
+    width: 500px;
+    height: 400px;
+  }
+
+  .grid-container2 .bleach img {
+    width: 500px;
+    height: 400px;
+  }
+  #AOT {
+    font-size: 50px;
+  }
+  #DN1 {
+    font-size: 50px;
+  }
+  #fmab {
+    font-size: 50px;
+  }
+  #fmab2 {
+    font-size: 24px;
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  #navbar nav ul {
+    animation-name: slideUL2;
+    animation-duration: 2s;
+    padding-left: 40px;
+  }
+}
+
+@keyframes toGIF {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    background-image: url(images/banner3_enhanced.png);
+  }
+  to {
+    background-image: url(images/banner_sakura.png);
+  }
+}
+@keyframes changeColor {
+  from {
+    color: aliceblue;
+    font-size: 30px;
+  }
+  to {
+    color: purple;
+    font-size: 36px;
+  }
+}
+@keyframes changeBorder2 {
+  from {
+    border-bottom: 3px solid plum;
+  }
+  to {
+    border-bottom: 3px solid pink;
+  }
+}
+
+@keyframes slideUL1 {
+  from {
+    padding-left: 40px;
+  }
+  to {
+    padding: left 100px;
+  }
+}
+
+@keyframes slideUL2 {
+  from {
+    padding-left: 100px;
+  }
+  to {
+    padding-left: 40px;
+  }
+}
+
+@keyframes ShrinkTitle {
+  from {
+    font-size: 70px;
+    padding-top: 150px;
+  }
+  to {
+    font-size: 50px;
+    padding-top: 190px;
+  }
+}
+@keyframes PhoneShrinkTitle {
+  from {
+    font-size: 50px;
+    padding-top: 150px;
+  }
+  to {
+    font-size: 30px;
+    padding-top: 220px;
+  }
+}
+@keyframes PhoneShrinkTitle2 {
+  from {
+    font-size: 50px;
+    padding-top: 190px;
+  }
+  to {
+    padding-top: 220px;
+    font-size: 30px;
+  }
+}
+@keyframes PhoneShrinkTitle3 {
+  from {
+    font-size: 50px;
+    padding-top: 190px;
+  }
+  to {
+    padding-top: 180px;
+    font-size: 30px;
+  }
+}
+@keyframes PhoneEnlargeTitle {
+  from {
+    font-size: 30px;
+    padding-top: 220px;
+  }
+  to {
+    font-size: 50px;
+    padding-top: 150px;
+  }
+}
+@keyframes PhoneEnlargeTitle2 {
+  from {
+    padding-top: 220px;
+    font-size: 30px;
+  }
+  to {
+    font-size: 50px;
+    padding-top: 190px;
+  }
+}
+@keyframes ShrinkTitle2 {
+  from {
+    font-size: 60px;
+    padding-top: 150px;
+  }
+  to {
+    font-size: 30px;
+    padding-top: 190px;
+  }
+}
+@keyframes ShrinkTitle3 {
+  from {
+    font-size: 60px;
+    padding-top: 270px;
+  }
+  to {
+    font-size: 30px;
+    padding-top: 310px;
+  }
+}
+@keyframes EnlargeTitle {
+  from {
+    font-size: 50px;
+    padding-top: 190px;
+  }
+  to {
+    font-size: 70px;
+    padding-top: 150px;
+  }
+}
+@keyframes EnlargeTitle2 {
+  from {
+    font-size: 30px;
+    padding-top: 190px;
+  }
+  to {
+    font-size: 60px;
+    padding-top: 150px;
+  }
+}
+@keyframes EnlargeTitle3 {
+  from {
+    font-size: 30px;
+    padding-top: 310px;
+  }
+  to {
+    font-size: 60px;
+    padding-top: 270px;
+  }
+}
+@keyframes slide1 {
+  from {
+    background-image: url(images/banner_sakura.png);
+  }
+  to {
+    background-image: url(images/banner3_enhanced.png);
+  }
+}
+@keyframes changeColor1 {
+  from {
+    color: purple;
+    font-size: 36px;
+  }
+  to {
+    color: aliceblue;
+    font-size: 30px;
+  }
+}
+@keyframes changeBorder {
+  from {
+    border-bottom: 3px solid pink;
+  }
+  to {
+    border-bottom: 3px solid plum;
+  }
+}
