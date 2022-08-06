@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="886252355349-kak33rqodje53p6c7h8s78go76leoguk.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>Discover</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script2.js"></script>
+    <script src="./script3.js"></script>
+  </head>
+  <body>
+     <form
+      action="http://localhost:8081/discover"
+      method="get"
+      id="myForm"
+      name="myForm"
+    >
+      <div id="googleSignUp">
+        <div
+          class="g-signin2"
+          data-onsuccess="onSignIn"
+          
+          id="login"
+          name="login"
+        ></div>
+      </div>
+      
+      <input type="text" id="username" name="username" style="display: none" />
+
+      <input
+        type="submit"
+        value="Submit"
+        id="submitBtn"
+        style="display: none"
+      />
+
+    <div id="main">
+      <div id="banner7">
+        <div id="title7">Discover</div>
+      </div>
+    </div>
+
+    <br />
+
+    <p style="text-align: center; font-family: Staubach; font-size: 30px">
+      Hey!!!
+    </p>
+
+    <br />
+    <div id="new-container">
+      <div id="new-items">
+        <!-- <select name="animeSearch" id="animeSearch" onchange="changed()">
+          <option value="searching">Search Anime</option>
+          <option value="Other">Other</option>
+        </select> -->
+        <div id="search">
+          <input
+            type="text"
+            id="searchedAnime"
+            name="searchedAnime"
+            placeholder="Search Anime e.g. Death Note"
+          />
+        </div>
+        <div id="searchButton">
+          <input
+            type="button"
+            value="Search"
+            id="SearchBtn"
+            onclick="fetching(0)"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div id="new-container2">
+      <div id="new-anime-title">
+        <h1 id="animeTitle">Fullmetal Alchemist: Brotherhood</h1>
+      </div>
+      <div id="new-inner-container">
+        <div>
+          <p id="airing">Status: <span>Completed</span></p>
+        </div>
+        <div>
+          <p id="episodes">Episodes: <span>64</span></p>
+        </div>
+        <div>
+          <p id="score">Score: <span>9.15</span></p>
+        </div>
+
+        <div>
+          <p id="rating">Rated: <span>R</span></p>
+        </div>
+        <div>
+          <input
+            type="button"
+            id="addToFavs"
+            value="Add To Favorites"
+            style="display: none"
+          />
+        </div>
+      </div>
+      <div id="new-inner-container3">
+        <div id="new-image">
+          <img
+            id="newAnimeImage"
+            src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f"
+          />
+        </div>
+        <div id="synopsis">
+          <h1>Synopsis</h1>
+          <p id="synopsisText">
+            "After a horrific alchemy experiment goes wrong in the Elric
+            household, brothers Edward and Alphonse are left in a catastrophic
+            new reality. Ignoring the alchemical principle banning human
+            transmutatio..."
+          </p>
+        </div>
+      </div>
+
+      <div id="suggestions">
+        <p id="suggested"></p>
+        <a id="link1" onclick="fetching(1)"></a
+        ><a id="link2" onclick="fetching(2)"></a
+        ><a id="link3" onclick="fetching(3)"></a>
+      </div>
+      <div id="bottom-design-border"></div>
+    </div>
+
+    <p id="animation">Art is an explosion !!!</p>
+    <div id="gif-container">
+      <div id="gif1"><img src="gifs/colossal.gif" /></div>
+      <div id="gif1"><img src="gifs/Todoroki.gif" /></div>
+      <div id="gif1"><img src="gifs/Mustang.gif" /></div>
+    </div>
+    <br /><br />
+    <div id="banner8">
+      <div id="navbar6">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Introduction</a>
+            </li>
+            <li>
+              <a href="index2.html">Anime DB</a>
+            </li>
+            <li>
+              <a href="index3.html">General Information</a>
+            </li>
+            <li>
+              <a href="#gallery">Discover</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script>
+      var input = document.getElementById("searchedAnime");
+      var input2 = document.getElementById("submitBtn");
+
+      input.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("SearchBtn").click();
+        }
+      });
+      input2.removeEventListener("Keyup", function(event){
+        if(event.keyCode ===13){
+          console.log("Prevent sign in");
+        }
+      });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime DB</title>
+    <link href="style.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+    <audio id="DNTheme">
+      <source src="audio/Death Note Ost 1 - 19 Death Note Theme-mc.mp3"></source>
+    </audio>
+    <audio id="OPTheme">
+      <source src="audio/Overtaken-Web.mp3"></source>
+    </audio>
+    <audio id="FMABSong">
+      <source src="audio/Let it out - Web.mp3"></source>
+    </audio>
+    <audio id="NarutoSong">
+      <source src="audio/The Raising Fighting Spirit-web.mp3"></source>
+    </audio>
+    <audio id="AOTSong">
+      <source src="audio/You See Big Girl-Web.mp3"></source>
+    </audio>
+    <audio id="BleachSong">
+      <source src="audio/On the Precipice of Defeat - Web.mp3"></source>
+    </audio>
+
+    <div id="main">
+      <div id="banner3">
+        <div id="title2">Anime DB</div>
+      </div>
+    </div>
+
+    <h1 id="title3">Highest Rated Anime</h1>
+    <div id="Info">
+      <p id="par2">
+        There are approximately <span>19,000</span> anime shows out there (according to My Anime List Database), with Fullmetal
+        Alchemist Brotherhood in the lead with an overall rating of 9.1/10
+      </p>
+      <div id="outer1">
+        <img class="FMAB" src="images/Edward.jpg" onmouseenter="playFMAB()" onmouseleave="stopFMAB()"/>
+
+        <div id="inner1">
+          <h2 id="fmab">Fullmetal Alchemist Brotherhood</h2>
+
+          <p id="fmab2">
+            
+            <span>Edward</span> and <span>Alphonse Elric</span>, two alchemist brothers, want to
+            restore their bodies after a disastrous failed attempt to bring
+            their mother back to life through alchemy. The series comprises a
+            total of 64 episodes and four original video animations.
+            <br />9.1/10
+            <img class="stars" src="icons/star.png" />
+          </p>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div id="outer1">
+        <img class="DeathNote" src="images/Death_Note.jpg" onmouseenter="playDN()" onmouseleave="stopDN()"/>
+
+        <div id="inner1">
+          <h2 id="DN1">Death Note</h2>
+
+          <p id="fmab2">
+            <span>Light Yagami</span>, a teen genius who
+            discovers a mysterious notebook: the "Death Note", which belonged to
+            the Shinigami <span>Ryuk</span>, and grants the user the
+            supernatural ability to kill anyone whose name is written in its
+            pages. With an attempt to create a crime-free society, he is faced
+            with the Japanese Elite Task Force led by <span>L</span>. <br />9/10
+            <img class="stars" src="icons/star.png" />
+          </p>
+        </div>
+      </div>
+      <br /><br /><br />
+      <div id="outer1">
+        <img class="aot" src="images/aot_fire.jpg" onmouseenter="playAOT()" onmouseleave="stopAOT()"/>
+
+        <div id="inner1">
+          <h2 id="AOT">Attack On Titan</h2>
+
+          <p id="fmab2">
+            In a world where humanity lives inside cities surrounded
+            by three enormous walls that protect them from the gigantic
+            man-eating humanoids referred to as Titans;
+            <span>Eren Yeager</span>, vows to exterminate the Titans after a
+            Titan brings about the destruction of his hometown and the death of
+            his mother.. <br />9/10
+            <img class="stars" src="icons/star.png" />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="title4">The Big Three</h1>
+
+    <div class="grid-container2">
+      <div class="txt1"><h1>One Piece</h1></div>
+      <div class="txt2"><h1>Naruto</h1></div>
+      <div class="txt3"><h1>BLEACH</h1></div>
+      <div class="op"><img src="images/One_Piece.jpg" onmouseenter="playOP()" onmouseout="stopOP()"/></div>
+      <div class="naruto"><img src="images/Naruto_Sea.jpg" onmouseenter="playNaruto()" onmouseleave="stopNaruto()"/></div>
+      <div class="bleach"><img src="images/Ichigo_Kurosaki.jpg"  onmouseenter="playBleach()" onmouseleave="stopBleach()"/></div>
+      <div class="overview1">
+        <p id="B3">
+         <span>Monkey D. Luffy</span>,
+          inspired by his childhood idol and powerful pirate "Red Haired"
+          Shanks, sets off on a journey from the East Blue Sea to find the
+          titular treasure and proclaim himself the
+          <span>King of the Pirates</span>.
+        </p>
+      </div>
+      <div class="overview2">
+        <p id="B3">
+          <span>Naruto Uzumaki</span>, a young ninja
+          seeks recognition from his peers and dreams of becoming the
+          <span>Hokage</span>, the leader of his village.
+        </p>
+      </div>
+      <div class="overview3">
+        <p id="B3">
+          
+          <span>Ichigo Kurosaki</span>, who inherits his parents' destiny as a <span>Soul Reaper</span>, takes on the duties of defending humans from evil spirits and
+          guiding departed souls to the afterlife.
+      </div>
+    </div>
+
+    <h1 id="pokeText2">p q r s t u v w x</h1>
+    <div id="pokemon">
+      <p id="funFact">Fun Fact</p>
+      <p id="fact2">
+        <span>Attack On Titan</span> has the most highest rated episodes with a user rating of <span>9.9/10</span> or above (7 episodes), surpassing
+        Breaking Bad (3), and Chernobyl (1) - IMDb
+      </p>
+    </div>
+    <div id="banner4">
+      <div id="navbar3">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Introduction</a>
+            </li>
+            <li>
+              <a href="#Info">Anime DB</a>
+              <!--change #gallery to html file-->
+            </li>
+            <li>
+              <a href="index3.html">General Information</a>
+            </li>
+            <li>
+              <a href="index4.html">Discover</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

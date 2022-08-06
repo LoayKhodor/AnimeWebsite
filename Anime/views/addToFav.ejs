@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="2; url=http://localhost:8081/index4.html" />
+    <title>Favorites</title>
+    <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+    
+    <br>
+    <div id="new-container2">
+        <div id="new-anime-title">
+          <h1 id="animeTitle" name="animeTitle"><%=animeTitle%></h1>
+        </div>
+        <div id="new-inner-container">
+          <div>
+            <p id="airing">Status: <span id="valueAiring"><%=animeStatus%></span></p>
+          </div>
+          <div>
+            <p id="episodes">Episodes: <span id="valueEpisodes"><%=animeEpisodes%></span></p>
+          </div>
+          <div>
+            <p id="score">Score: <span id="valueScore"><%=animeScore%></span></p>
+          </div>
+    
+          <div>
+            <p id="rating">Rated: <span id="valueRated"><%=animeRated%></span></p>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div id="new-inner-container3">
+          <div id="new-image">
+            <img
+              id="new-anime-image"
+              src="<%=animeImage%>"
+            />
+          </div>
+          <div id="synopsis">
+            <h1>Synopsis</h1>
+            <p id="synopsis-text">
+             <%=animeSynopsis%>
+            </p>
+          </div>
+        </div>
+</body>
+</html>

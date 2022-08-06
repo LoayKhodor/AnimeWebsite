@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <meta
+      name="google-signin-client_id"
+      content="886252355349-kak33rqodje53p6c7h8s78go76leoguk.apps.googleusercontent.com"
+    />
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>Discover</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script2.js"></script>
+    <!--fetch JSON from API-->
+    <script src="script3.js"></script>
+    <!--Google Login-->
+
+  </head>
+  <body>
+    
+    <form
+      action="http://localhost:8081/index4.html"
+      method="get"
+      id="myForm2"
+      name="myForm2"
+    >
+      <div id="googleSignUp">
+        <a id="googleSignOut" href="index4.html" onclick="signOut()">
+          Sign out
+        </a>
+      </div>
+      <input
+        type="submit"
+        value="Submit"
+        id="submitBtn"
+        style="display: none"
+      />
+    </form>
+    <div id="main">
+      <div id="banner7">
+        <div id="title7">Discover</div>
+      </div>
+    </div>
+
+    <br />
+
+    <p style="text-align: center; font-family: Staubach; font-size: 30px">
+      Hey <%= fullname %>!
+    </p>
+
+    <br />
+    <div id="new-container">
+      <div id="new-items">
+       
+        <div id="search">
+          <input
+            type="text"
+            id="searchedAnime"
+            name="searchedAnime"
+            placeholder="Search Anime e.g. Death Note"
+          />
+        </div>
+        <div id="searchButton">
+          <input
+            type="button"
+            value="Search"
+            id="SearchBtn"
+            onclick="fetching(0)"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <form action="http://localhost:8081/addToFav" method="post">
+    <div id="new-container2">
+      <div id="new-anime-title">
+        <h1 id="animeTitle">Fullmetal Alchemist: Brotherhood</h1>
+      </div>
+      <div id="new-inner-container">
+        <div>
+          <p id="airing">Status: <span id="valueAiring">Completed</span></p>
+        </div>
+        <div>
+          <p id="episodes">Episodes: <span id="valueEpisodes">64</span></p>
+        </div>
+        <div>
+          <p id="score">Score: <span id="valueScore">9.15</span></p>
+        </div>
+
+        <div>
+          <p id="rating">Rated: <span id="valueRated">R</span></p>
+        </div>
+        <div>
+          <input
+            type="submit"
+            id="addToFavs"
+            value="Add To Favorites"
+          />
+        </div>
+      </div>
+      <div id="new-inner-container3">
+        <div id="new-image">
+          <img
+            id="newAnimeImage"
+            src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f"
+          />
+        </div>
+        <div id="synopsis">
+          <h1>Synopsis</h1>
+          <p id="synopsisText">
+            "After a horrific alchemy experiment goes wrong in the Elric
+            household, brothers Edward and Alphonse are left in a catastrophic
+            new reality. Ignoring the alchemical principle banning human
+            transmutatio..."
+          </p>
+        </div>
+      </div>
+<!--Store all values here and insert them into database-->
+      <input type="text" id="animeTitle2" name="animeTitle2" value="Fullmetal Alchemist Brotherhood" style="display: none;">
+      <input type="text" id="animeStatus2" name="animeStatus2" value="Completed"  style="display: none;">
+      <input type="text" id="animeEpisodes2"  name="animeEpisodes2" value="64"  style="display: none;">
+      <input type="text" id="animeScore2"  name="animeScore2" value="9.15" style="display: none;">
+      <input type="text" id="animeRated2"  name="animeRated2" value="R" style="display: none;">
+      <input type="text" id="animeSynopsis2"  name="animeSynopsis2" style="display: none;" value="After a horrific alchemy experiment goes wrong in the Elric
+      household, brothers Edward and Alphonse are left in a catastrophic
+      new reality. Ignoring the alchemical principle banning human
+      transmutatio...">
+      <input type="text" id="animeURL2" style="display: none;" name="animeURL2" value="https://cdn.myanimelist.net/images/anime/1223/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f">
+      <input type="text" id="username2"style="display: none;"  name="username2" value="<%=fullname%>">
+      <input type="text" id="myAnimeListURL"style="display: none;"  name="myAnimeListURL" value="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood">
+
+    </form>
+
+      <div id="suggestions">
+        <p id="suggested"></p>
+        <a id="link1" onclick="fetching(1)"></a
+        ><a id="link2" onclick="fetching(2)"></a
+        ><a id="link3" onclick="fetching(3)"></a>
+      </div>
+      <div id="bottom-design-border"></div>
+    </div>
+
+    <%if (rslt.length != 0){%>
+    <h1 id="title8">Favorites</h1>
+    <div id="favContainer">
+      <div id="favs">
+        
+        <%rslt.forEach(document =>{%>
+        
+          <input type="button" id="<%= document._id%>" onclick="thisAnime('<%=document._id%>')" value="remove" style="position: absolute; align-self: start;">
+        <a href="<%= document.malURL%>" target="_blank">
+          <img id="img<%= document._id%>" src="<%=document.animeImage%>"  style="width: 150px; height: 200px; cursor:grab"/>
+        </a>
+          
+        <%})%>
+      </div>
+    </div>
+    <%}%>
+
+    <script>
+      function thisAnime(Id){
+        const animeBtn = document.getElementById(Id);
+        const animeImage = document.getElementById("img"+Id);
+        animeBtn.style.opacity = "0.5";
+        animeImage.style.opacity = "0.5";
+        console.log(Id);
+    fetch("http://localhost:8081/remove",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+      },
+      body: `ID=${Id}`,
+    }).then(function (respone){
+     
+
+      return response.text();
+    }).then(function(data){
+      
+      console.log(data);
+    });
+      }
+    </script>
+
+    <br /><br />
+    <div id="banner8">
+      <div id="navbar6">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Introduction</a>
+            </li>
+            <li>
+              <a href="index2.html">Anime DB</a>
+            </li>
+            <li>
+              <a href="index3.html">General Information</a>
+            </li>
+            <li>
+              <a href="#gallery">Discover</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- On Press Enter Search -->
+    <script>
+      var input = document.getElementById("searchedAnime");
+
+      input.addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("SearchBtn").click();
+        }
+      });
+
+      // function addToFavorites() {
+      //   var url = document.getElementById("new-anime-image").src;
+      //   document.getElementById("favURL").src = url;
+      // }
+    </script>
+   
+  </body>
+</html>
